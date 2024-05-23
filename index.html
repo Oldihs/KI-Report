@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KI Report</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <========== FAVICON ==========> -->
+    <link rel="shortcut icon" href="images/favicon/report-favicon.png" type="image/x-icon">
+    
+    <!-- <========== BXICONS ==========> -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- <========== AOS JS ==========> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="header-logo">THE REPORT</h1>
+            <nav class="navbar">
+                <div class="menu-icon" id="menu-icon">
+                    <i class='bx bx-menu'></i>
+                </div>
+                <ul class="navbar-container" id="navbar-container">
+                    <div class="close-icon" id="close-icon">
+                        <i class='bx bx-x'></i>
+                    </div>
+                    <li class="nav-link">
+                        <a href="#home">
+                            <i class='bx bx-home'></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#about">
+                            <i class='bx bx-info-circle'></i>
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#activities">
+                            <i class='bx bx-run'></i>
+                            Activities
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#quote-section">
+                            <i class='bx bxs-quote-alt-left'></i>
+                            Quote
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home">
+        <video autoplay muted loop class="background-video">
+            <source src="videos/marlioboro-landing.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content" data-aos="fade-up">
+            <h1 class="hero-main-text">2024 <span class="SE-text">Software Engineering</span> Industry Visit Report</h1>
+            <a href="#about" class="hero-btn">See More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="section-title" data-aos="fade-right"><span class="number">01</span> <span class="section-title-text">About</span></h2>
+                <h3 data-aos="fade-right">A Visit to Yogyakarta</h3>
+                <p data-aos="fade-right">Our founder, Manpreet, is a Registered Dietitian who is deeply passionate about educating people on how to maintain good health through nutritious food.</p>
+                <a href="#activities" class="about-btn" data-aos="fade-right">See Activities</a>
+            </div>
+            <div class="about-video-container">
+                <video autoplay muted loop class="about-video" data-aos="fade-left">
+                    <source src="videos/tugu-yogyakarta.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="activities">
+        <div class="activities-container">
+            <div class="activities-header">
+                <h2 class="section-title" data-aos="fade-right"><span class="number">02</span> <span class="section-title-text">Our Activities</span></h2>
+                <div class="tabs" data-aos="fade-up">
+                    <button class="tab active" data-index="0">All</button>
+                    <button class="tab" data-index="1">Day 1</button>
+                    <button class="tab" data-index="2">Day 2</button>
+                    <button class="tab" data-index="3">Day 3</button>
+                </div>
+            </div>
+            <div class="gallery" data-aos="zoom-in">
+                <div class="gallery-item" data-day="1" data-aos-duration="100"><img src="images/day-1/amikom.jpg" alt="Activity 1"></div>
+                <div class="gallery-item" data-day="1" data-aos-duration="200"><img src="images/day-1/marlioboro.jpg" alt="Activity 2"></div>
+                <div class="gallery-item" data-day="2" data-aos-duration="300"><img src="images/day-2/bunker-kaliadem.jpg" alt="Activity 3"></div>
+                <div class="gallery-item" data-day="2" data-aos-duration="400"><img src="images/day-2/gala-dinner.jpg" alt="Activity 4"></div>
+                <div class="gallery-item" data-day="3" data-aos-duration="500"><img src="images/day-3/beri-jalan.jpg" alt="Activity 5"></div>
+                <div class="gallery-item" data-day="3" data-aos-duration="600"><img src="images/day-3/rumah-sleman.jpg" alt="Activity 6"></div>
+            </div>
+            <div class="gallery-footer">
+                <p data-aos="fade-up">❤️ Here are our gallery of activities in 3 days 📸</p>
+            </div>
+        </div>
+
+        <div id="imageModal" class="image-modal">
+            <span class="close">&times;</span>
+            <img class="image-modal-content" id="modalImage">
+        </div>        
+    </section>    
+
+    <section id="quote-section">
+        <div class="video-overlay"></div>
+        <video class="background-video" autoplay muted loop>
+            <source src="videos/marlioboro-quotes.mp4" type="video/mp4">
+        </video>
+        <div class="quote-container">
+            <p class="quote-text" data-aos="fade-up">“Jogja Masih Meninggalkan Sejarah. Ya, sejarah cinta aku dan engkau.”</p>
+            <p class="quote-author" data-aos="fade-up" data-aos-duration="100">- The Unknown -</p>
+        </div>
+    </section>    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-image">
+                <img src="images/roblox-ambatron.gif" alt="Footer Image" data-aos="fade-right">
+            </div>
+            <div class="footer-content">
+                <nav class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item" data-aos="fade-left"><a href="#home" class="footer-nav-link">Home</a></li>
+                        <li class="footer-nav-item" data-aos="fade-left"><a href="#about" class="footer-nav-link">About</a></li>
+                        <li class="footer-nav-item" data-aos="fade-left"><a href="#activities" class="footer-nav-link">Activities</a></li>
+                        <li class="footer-nav-item" data-aos="fade-left"><a href="#quote-section" class="footer-nav-link">Quotes</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-credits">
+                    <p data-aos="fade-up">Made with <span>💀</span> copyright 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTopButton">
+        <i class='bx bx-chevron-up'></i>
+    </button>  
+
+    <div class="cursor-circle"></div>
+
+    <script src="js/activities-tabs.js"></script>
+    <script src="js/cursor-circle.js"></script>
+    <script src="js/back-to-top.js"></script>
+    <script src="js/image-modal.js"></script>
+    <script src="js/sidebar.js"></script>
+
+    <!-- <========== AOS JS ==========> -->
+    
+    <script>
+        AOS.init({
+        offset: -150,
+        easing: 'ease-in-out', // Animation easing
+        mirror: true, // Whether elements should animate out while scrolling past them
+    });
+    </script>
+    
+</body>
+</html>
